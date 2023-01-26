@@ -1,40 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <div>PWA</div>
+          <div class="fragment fade-up">Progressive Web Application</div>
+        </section>
+        <section>
+          <p>Desktop v SmartPhone</p>
+          <div class="fragment fade-up">
+            <div>2007</div>
+            <img
+              class="r-frame"
+              width="300"
+              data-src="https://media.wired.com/photos/5952d4f5ae4a4866ec227956/1:1/w_1539,h_1539,c_limit/iPhone-AP_070109070253.jpg"
+            />
+          </div>
+        </section>
+        <section>
+          <div>Apple Store (1,6 b) / Google play (3,5 b)</div>
+          <div class="fragment fade-up">
+            <img
+              style="background: white"
+              class="r-frame"
+              width="800"
+              data-src="https://www.divante.com/hubfs/Divante_March_2021/Images/Chapter_2.1.png"
+            />
+          </div>
+          <div class="fragment fade-up">Android 76 => 70 / iOS 22 => 28</div>
+        </section>
+        <section>
+          <h1>Business</h1>
+          <div class="fragment fade-up">iOS devops</div>
+          <div class="fragment fade-up">Android devops</div>
+          <div class="fragment fade-up">Browsers Devops</div>
+          <div class="fragment fade-up">
+            Cross-platform (have not changed the situation quite well. Still too
+            expensive)
+          </div>
+        </section>
+        <section>
+          <h2>2015 - Google introduced PWA</h2>
+          <ul class="fragment fade-up">
+            <li>It can be installed via store or Browser</li>
+            <li>It can be used on Android/iOS/Browser</li>
+            <li>It's cheep to develop (HTML, CSS, JS)</li>
+            <li>Looks like native app / and work similar</li>
+            <li>Fast and SEO friendly</li>
+          </ul>
+        </section>
+        <section>
+          <h2>How PWA Works</h2>
+          <div class="fragment fade-up">
+            <div>Service Worker</div>
+            <img
+              class="r-frame"
+              width="450"
+              data-src="https://web-dev.imgix.net/image/RK2djpBgopg9kzCyJbUSjhEGmnw1/iKWO7c2WNobLt30VZx9C.png?auto=format"
+            />
+          </div>
+          <div class="fragment fade-up">
+            <div>Manifest</div>
+            <img
+              class="r-frame"
+              width="300"
+              data-src="https://web-dev.imgix.net/image/RK2djpBgopg9kzCyJbUSjhEGmnw1/uO7fu1MHNzfipVZnbS7H.png?auto=format"
+            />
+          </div>
+        </section>
+        <section>
+          <h3>Best PWA Examples</h3>
+          <div>
+            <img
+              class="r-frame"
+              width="450"
+              data-src="https://www.simicart.com/blog/wp-content/uploads/starbucks.jpg"
+            />
+            <img
+              class="r-frame"
+              width="450"
+              data-src="https://www.simicart.com/blog/wp-content/uploads/starbuck.png"
+            />
+          </div>
+          <div>
+            <a
+              href="https://www.simicart.com/blog/progressive-web-apps-examples/"
+              >More Examples</a
+            >
+          </div>
+        </section>
+        <section>
+          <h3>Cons of PWA and Future</h3>
+          <div class="fragment fade-up">
+            Shortage of performance (forbidden to use geolocation, scanner,
+            bluetooth and more)
+          </div>
+          <div class="fragment fade-up">Perfect for MVP</div>
+          <div class="fragment fade-up">Forth power</div>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
